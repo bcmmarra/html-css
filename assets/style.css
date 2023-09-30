@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* Regra @charset aplicada para evitar problemas com acentuação*/
+
+body{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    background-color: #1E90FF;
+    color: #0000CD;
+    text-align: center;
+}
+h2{
+    color: #8B0000;
+}
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}

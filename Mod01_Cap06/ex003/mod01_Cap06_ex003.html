@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÓDULO 01 - CAPÍTULO 06</title>
+    <link rel="shortcut icon" href="../../Mod01_Cap06/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens e Favicons</h1>
+    <h2>Atenção com os Direitos Autorais.</h2>
+    <p>Existem 4 maneiras simples de usar imagens dentro da lei.</p>
+    <ol>
+        <li>Seja o criador da imagem - Use fotos que o seu próprio cliente tirou ou que você mesmo criou.</li>
+        <li>Consiga uma autorização legal de quem é o detentor dos direitos autorais.</li>
+        <li>Compre o direito de usar a imagem. Existem sites como o iStockPhoto, DepositPhotos, ShutterStock.</li>
+        <li>Use imagens de dominio público, pois essas você tem a liberdade de colocar no seu site.</li>
+    </ol>
+    <h2>Sites de dominio público.</h2>
+    <ul>
+        <li>UnSplash</li>
+        <li>Pexels</li>
+        <li>FreePik</li>
+        <li>Rawpixel</li>
+        <li>Pixabay</li>
+        <li>Libreshot</li>
+        <li>Wikimedia Commons</li>
+    </ul>
+    <h2>Formatos de Imagens</h2>
+    <p>Os formatos mais usados são JPEG e PNG.</p>
+    <p>Dica: Use imagens no tamanho certo, sem carregar imagens grande e dimensionar com o CSS, pois o arquivo fica muito pesado, a largura de banda necessária será muito grande, com o passar do tempo e os acessos forem aumentando.</p>
+
+    <h2>Carregando Imanges</h2>
+    <p>Carregando Imangem dentro da mesma página - logo.jpg</p>
+    <code>&lt;img src="logo.jpg" alt="Logo Google"&gt;</code><br>
+    <img src="logo.jpg" alt="Logo Google">
+    <p>Carregando Imangem em outra pasta dentro do projeto - ../ex3/imagens</p>
+    <code>&lt;img src="../ex3/imagens/logo.jpg" alt="Logo Google"&gt;</code><br>
+    <img src="../ex003/imagens/logo.jpg" alt="Logo Google">
+    <p>Carregando Imangem externa, por meio da uma URL completa - http://www.google.com/google.jpg</p>
+    <code>&lt;img src="http://www.google.com/google.jpg" alt="Logo Google"&gt;</code><br>
+    <img src="http://www.google.com/google.jpg" alt="Logo Google">
+
+    <h2>Favicons</h2>
+    <P>Favicon é o icone que aparece na ABA do navegador ou fica salvo no favorito o formato do arquivo é .ico, conseguimos encontrar vários modelos de favicon no site da IconArchive</P>
+    <p>O icone do Favicon é colocado na tag &lt;head&gt;, é recomendado que o nome do arquivo seja favicon.ico. A tag que usamos para incluir o favicon é  <code>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</code>.</p>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 02 - Capítulo 15</title>
+    <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
+    <style>
+/* 
+    . class
+    # ID
+    : Pseudo-classes
+    :: Pseudo-elementos
+    > Children (filhos)
+*/
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+        }
+        p{
+            text-indent: 30px;
+        }
+        span{
+            font-weight: bold;
+        }
+        div{
+            background-color:#8B0000;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: antiquewhite;
+            width: 200px;
+            height: 200px;
+        }
+        div:hover{
+            background-color:#695b1c;
+            color: #8B0000 ;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            background-color:#1c6933;
+            color: #8B0000 ;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes em CSS - HOVER</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>Texto Oculto</p>
+    </div>
+    <p>Vamos treinar</p>
+
+    
+</body>
+</html>

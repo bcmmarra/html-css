@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 02 - Capítulo 16</title>
+    <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
+
+    <style>
+/* Estilos CSS HTML antigo */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        #titulo {
+            background-color: white;
+            margin: 0px 10px;
+            padding: 10px;
+        }
+        #titulo > h1 {
+            text-align: center;
+        }
+
+        #menu {
+            text-align: right;
+            background-color: lightgray;
+            margin: 0px 10px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        #menu > a {
+            text-decoration: none;
+            margin-left: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+        #menu > a:hover {
+            text-decoration: underline;
+        }
+        #content{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+        #content-artigo1{
+            background-color: lightgray;
+            padding: 10px;
+        }
+        #content-artigo2{
+            background-color: lightgray;
+            padding: 10px;
+        }
+        #content-autor{
+            background-color: rgb(172, 170, 170);
+            font-weight: bold;
+            text-align: right;
+            font-style: italic;
+            padding-right: 10px;
+        }
+        #rodape{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+
+/* Estilos CSS HTML 5 - Semântico  */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+        header > h1 {
+            text-align: center;
+        }
+
+        nav {
+            text-align: right;
+            background-color: rgb(83, 83, 83);
+            margin: 0px 10px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav > a {
+            text-decoration: none;
+            margin-left: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+        section{
+            background-color: lightgray;
+            padding: 10px;
+        }
+        aside{
+            background-color: rgb(172, 170, 170);
+            font-weight: bold;
+            text-align: right;
+            font-style: italic;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="background-color: white; text-align: center;">Grouping Tags</h1>
+<hr>
+<br><br>
+<h1 style="background-color: rgb(228, 49, 49); text-align: center;">Metodo Antigo versão HTML4</h1>
+    
+    <div id="cabecalho">
+        <div id="titulo">
+            <h1>Meu site</h1>
+        </div>
+        <div id="menu">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+        <div id="content">
+            <div id="content-artigo1">
+                <h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero deleniti possimus quis molestiae reiciendis voluptatum. Nisi obcaecati cumque sit temporibus voluptates praesentium officia fugit sequi, placeat voluptatibus. Omnis, esse in!</p>
+            <div id="content-artigo2">
+            <h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero deleniti possimus quis molestiae reiciendis voluptatum. Nisi obcaecati cumque sit temporibus voluptates praesentium officia fugit sequi, placeat voluptatibus. Omnis, esse in!</p>
+            </div>
+            <div id="content-autor">       
+                Artigo Escrito por Funalo de Tal
+            </div>
+        </div>
+        <div id="rodape">
+            <p>Desenvolvido pelo CursoemVideo</p>
+        </div>
+    </div>
+    <hr>
+    
+<br><br>
+    <h1 style="background-color: rgb(228, 49, 49); text-align: center;">Metodo Atual versão HTML5 Com o uso de tags semanticas</h1>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos do Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero deleniti possimus quis molestiae reiciendis voluptatum. Nisi obcaecati cumque sit temporibus voluptates praesentium officia fugit sequi, placeat voluptatibus. Omnis, esse in!</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero deleniti possimus quis molestiae reiciendis voluptatum. Nisi obcaecati cumque sit temporibus voluptates praesentium officia fugit sequi, placeat voluptatibus. Omnis, esse in!</p>
+            </article>
+            <article>
+                <aside>
+                    Artigo Escrito por Funalo de Tal
+                </aside>             
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+
+    </footer>
+
+</body>
+</html>
