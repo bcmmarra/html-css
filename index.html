@@ -23,24 +23,47 @@
         }
         section{
             display: inline-block;
+            width: 800px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: aqua;
+
         }
-        .exercicios{
-            width: 25%;
+        .exercicios, .desafio{
             margin-left: 10px;
+            margin-bottom: 10px;
+            height: 100%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
         }
-        .exercicios > ul{
+        .exercicios > ul, .desafio > ul{
             columns: 2;
+            list-style-type: '\1F517\0020\0020';
+            list-style-position: inside;
         }
-        .exercicios-conteudo{
-            width: 72%;
+        .exercicios a{
+            text-decoration: none;
+            color: black
+        }
+        .exercicios-conteudo, .desafio-conteudo{
             margin-right: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .exercicios-conteudo > img{
+            display: inline-block;
+            margin: auto;
+            margin-top: 20px;
         }
         .desafio{
-            width: 25%;
             margin-left: 10px;
         }
+        .desafio > ul{
+            columns: 1;
+        }
         .desafio-conteudo{
-            width: 72%;
             margin-right: 10px;
         }
         footer{
@@ -100,58 +123,19 @@
     </section>
     <section class="exercicios-conteudo">
         <p>Material usado durante as aulas on-line do Curso em Video, contendo todos os exercícios propostos em aula.</p>
+        <img src="assets/HTML5_200px.png" alt="Logo HTML5">
+        <img src="assets/CSS3_200px.png" alt="Logo CSS3">
     </section>
     <section class="desafio">
         <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
-            <li>item 6</li>
-            <li>item 7</li>
-            <li>item 8</li>
-            <li>item 9</li>
-            <li>item 10</li>
-            <li>item 11</li>
-            <li>item 12</li>
-            <li>item 13</li>
-            <li>item 14</li>
-            <li>item 15</li>
-            <li>item 16</li>
-            <li>item 17</li>
-            <li>item 18</li>
-            <li>item 19</li>
+            <li><a href="../html-css/Mod02_Cap16/d010/desafio10.html" target="_blank" rel="noopener noreferrer">Projeto Android</a></li>
             <li>item 20</li>
             <li>item 21</li>
             <li>item 22</li>
         </ul>
     </section>
     <section class="desafio-conteudo">
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
-            <li>item 6</li>
-            <li>item 7</li>
-            <li>item 8</li>
-            <li>item 9</li>
-            <li>item 10</li>
-            <li>item 11</li>
-            <li>item 12</li>
-            <li>item 13</li>
-            <li>item 14</li>
-            <li>item 15</li>
-            <li>item 16</li>
-            <li>item 17</li>
-            <li>item 18</li>
-            <li>item 19</li>
-            <li>item 20</li>
-            <li>item 21</li>
-            <li>item 22</li>
-        </ul>
+        <p>Durante as aulas de HTML5 e CSS3, tivemos vários desafios para pratirar, focando o seu conteúdo em tudo que aprendemos até aqui... Toda a base começa sempre com essas tecnologias.</p>
     </section>
     <footer>
 Bruno Marra
