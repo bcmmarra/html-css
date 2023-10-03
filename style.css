@@ -1,0 +1,170 @@
+/*Declarações de importação*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/*Declaração das Variáveis*/
+
+:root{
+/*Variaveis de Cores*/
+--cor1:#c3defd;
+--cor2:#267DE0;
+--cor3:#1D61AE;
+--cor4:#565D66;
+--cor5:#103661;
+
+/*Variaveis de Fontes*/
+--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+--fonte-destaque: 'Josefin Sans', sans-serif;
+}
+
+/*Estilos Globais*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+body{
+    font-family: var(--fonte-padrao);
+    width: 940px;
+    margin: auto;
+    border: 1px solid #f1f1f1;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 6px #eaeaea;
+}
+
+/*Estilos Header*/
+header {
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    background: var(--cor1);
+    box-shadow: 0px 0px 6px #eaeaea;
+    background-image: linear-gradient(180deg, var(--cor1) 0%, var(--cor5) 100%);
+
+}
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    text-align: center;
+    color:var(--cor5);
+    padding: 10px;
+    text-shadow: 2px 0px 20px #eaeaea;    
+}
+header > p{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.692);
+    width: 500px;
+    margin: auto;
+}
+header > nav{
+    background-color: transparent;
+    width: 100%;
+
+}
+header > nav > a{
+    display: inline-block;
+    padding-left: 10px;
+    color: var(--cor1);
+    font-weight: bold;
+    text-decoration: none;
+    height: 18px;
+    padding: 8px;
+    border-radius: 10px;
+}
+header > nav > a:hover{
+    display: inline-block;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    text-decoration: underline;
+    font-weight: bold;
+    height: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 6px #eaeaea;
+}
+/*FIM Estilos Header*/
+
+/*Estilos Main*/
+.header_conteudo{
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    text-align: center;
+    color:var(--cor5);
+    padding: 10px;
+    text-shadow: 2px 0px 20px #eaeaea;    
+}
+article, aside{
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    background: var(--cor1);
+    box-shadow: 0px 0px 6px #eaeaea;
+    background-color: var(--cor1);
+}
+
+
+
+/*FIM Estilos Main*/
+
+
+
+/*
+a{
+}
+section, aside{
+    display: inline-block;
+    width: 366px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: aqua;
+
+}
+.exercicios, .desafio{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.exercicios > ul, .desafio > ul{
+    columns: 2;
+    list-style-type: '\1F517\0020\0020';
+    list-style-position: inside;
+}
+.exercicios a{
+    text-decoration: none;
+    color: black
+}
+.exercicios-conteudo, .desafio-conteudo{
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    height: 250px;
+    text-align: center;
+}
+.exercicios-conteudo > img{
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+    height: 150px;
+}
+.desafio{
+    margin-left: 10px;
+}
+.desafio > ul{
+    columns: 1;
+}
+.desafio-conteudo{
+    margin-right: 10px;
+}
+footer{
+}
+*/
