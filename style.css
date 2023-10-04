@@ -6,6 +6,7 @@
 
 :root{
 /*Variaveis de Cores*/
+--cor0:#d6d6d6;
 --cor1:#c3defd;
 --cor2:#267DE0;
 --cor3:#1D61AE;
@@ -31,6 +32,7 @@ body{
     padding: 5px;
     background: #fff;
     box-shadow: 0px 0px 6px #eaeaea;
+    background-color: var(--cor0);
 }
 
 /*Estilos Header*/
@@ -64,7 +66,6 @@ header > p{
 header > nav{
     background-color: transparent;
     width: 100%;
-
 }
 header > nav > a{
     display: inline-block;
@@ -91,32 +92,81 @@ header > nav > a:hover{
 /*FIM Estilos Header*/
 
 /*Estilos Main*/
+.exercicios-conteudo > p,
+.desafio-conteudo > p,
+.download-conteudo > p
+    {
+    margin: 0px 10px;
+    text-align: center;
+}
+aside > .container{
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+}
+aside > .container > img {
+    display: inline;
+}
 .header_conteudo{
     font-family: var(--fonte-destaque);
     font-size: 2em;
     text-align: center;
+    padding: 20px;
     color:var(--cor5);
-    padding: 10px;
     text-shadow: 2px 0px 20px #eaeaea;    
 }
 article, aside{
     border: 1px solid #f1f1f1;
     border-radius: 10px;
-    padding: 10px 10px 0px 10px;
     background: var(--cor1);
     box-shadow: 0px 0px 6px #eaeaea;
     background-color: var(--cor1);
+    padding: 5px;
 }
-.exercicios{
+.exercicios,
+.desafio,
+.download{
     line-height: 1.8em;
 }
-ul > li{
+.exercicios > div > p,
+.desafio > div > p,
+.download > div > p{
+    font-size: 0.9em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 3px #eaeaea;
+}
+.exercicios > div,
+.desafio > div,
+.download > div{
+    margin: auto;
+    text-align: right;
+}
+.desafio > ul > h2,
+.download > ul > h2{
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    padding-left: 10px;
+    text-align: center;
+    margin: 20px;
+}
+ul > a > li{
     list-style-type: none;
     padding-left: 8px;
-    list-style-type: '\2611\0020\0020';
     list-style-position: inside;
+    list-style-image: url(assets/Compartilhamento.png);
 }
-li > a{
+
+.recuo1{
+    text-indent: 40px;
+}
+.recuo2{
+    text-indent: 80px;
+}
+ul > a{
     text-decoration: none;
     color: var(--cor5);
     font-weight: bold;
@@ -124,64 +174,56 @@ li > a{
 ul > p{
     text-indent: 30px;
 }
-
-
-/*FIM Estilos Main*/
-
-
-
-/*
-a{
+ul > p > strong{
+    font-weight: bold;
+    font-style: italic;
+    color: var(--cor3);
 }
-section, aside{
-    display: inline-block;
-    width: 366px;
-    margin: auto;
-    margin-top: 10px;
-    border: 1px solid black;
-    background-color: aqua;
+aside > div > a > img {
+    width: 150px;
+    margin: 10px;
+}
+.flaticon{
+    width: 170px;
+    height: 40px;
+}
 
-}
-.exercicios, .desafio{
-    margin-left: 10px;
-    margin-bottom: 10px;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-}
-.exercicios > ul, .desafio > ul{
-    columns: 2;
-    list-style-type: '\1F517\0020\0020';
-    list-style-position: inside;
-}
-.exercicios a{
-    text-decoration: none;
-    color: black
-}
-.exercicios-conteudo, .desafio-conteudo{
-    margin-right: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    height: 250px;
+footer {
+    background-color: var(--cor5);
+    color: var(--cor1);
+    padding: 20px;
     text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    box-shadow: 0px 0px 6px #eaeaea;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
-.exercicios-conteudo > img{
-    display: inline-block;
-    margin: auto;
-    margin-top: 20px;
-    height: 150px;
+
+footer > p{
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
 }
-.desafio{
-    margin-left: 10px;
+
+footer > a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 8px;
+
 }
-.desafio > ul{
-    columns: 1;
+
+footer > a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 3px -1px 6px -2px #eaeaea;
 }
-.desafio-conteudo{
-    margin-right: 10px;
-}
-footer{
-}
-*/
