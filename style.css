@@ -183,6 +183,14 @@ aside > div > a > img {
     width: 150px;
     margin: 10px;
 }
+.topo{
+    margin: auto;
+    text-align: right;
+}
+.topo > a > img,
+.container > a > .topo{
+    width: 36px;
+}
 .flaticon{
     width: 170px;
     height: 40px;
