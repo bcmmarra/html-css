@@ -166,11 +166,20 @@ ul > a > li{
 .recuo2{
     text-indent: 80px;
 }
-ul > a{
+ul > a,
+ul > p > strong > a{
     text-decoration: none;
     color: var(--cor5);
     font-weight: bold;
 }
+
+a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+
 ul > p{
     text-indent: 30px;
 }
