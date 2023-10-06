@@ -195,7 +195,6 @@ aside > div > a > img {
     width: 170px;
     height: 40px;
 }
-
 footer {
     background-color: var(--cor5);
     color: var(--cor1);
@@ -207,14 +206,12 @@ footer {
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
 footer > p{
     padding-top: 20px;
     text-align: center;
     font-family: var(--fonte-padrao);
     font-weight: bold;
 }
-
 footer > a{
     text-decoration: none;
     color: var(--cor1);
@@ -223,7 +220,6 @@ footer > a{
     padding: 8px;
 
 }
-
 footer > a:hover{
     text-decoration: underline;
     font-weight: bold;
