@@ -56,48 +56,5 @@
 
     <h3>H<sub>2</sub>O e 10<sup>2</sup></h3>
     <p>Exemplo de texto em H<sub>2</sub>O e 10<sup>2</sup> com as tags &lt;sub&gt; e &lt;sup&gt;, possui semântica indicando que o texto representa um formula ou equação, letra pequena acima do texto ou abaixo do texto;</p>
-
-    <h3><code>TRECHO DE CÓDIGO DE PROGRAMAÇÃO</code></h3>
-    <p>Exemplo de texto em codigo de programação</p>
-        <h1>Exemplo de código em Python</h1>
-        <code>
-            num = int(input('Digite um número'))
-            if num % 2 == 0:
-                print(f'O número {num} é par')
-            else:
-                print(f'O número {num} é ímpar')
-            print('FIM DO PROGRAMA')
-        </code>
-    <p>Fazendo o código assim o HTML vai colocar cada linha de código na frente uma da outra. Para resolver esse problema basta colocar a tag &lt;code&gt; entre uma tag &lt;pre&gt;</p>
-    <pre><code>
-        num = int(input('Digite um número'))
-        if num % 2 == 0:
-            print(f'O número {num} é par')
-        else:
-            print(f'O número {num} é ímpar')
-        print('FIM DO PROGRAMA')
-    </code></pre>
-    <p>A tag &lt;pre&gt; mantem exatamente os espaços que colocamos no código no HTML;</p>
-
-    <h3><q>Citações</q> no fluxo do texto</h3>
-    <h3>
-        <blockquote>"Citações"</blockquote> Com o texto destacado do fluxo do texto
-    </h3>
-    <p>Exemplo de texto de citação com a tag &lt;q&gt; <q>Semântica é o significado dos vocábulos, por oposição à sua forma</q> dessa forma o texto vai ficar entre "aspas" no meio do texto corrido. Outra tag que podemos usar é a tag &lt;blockquote &gt;<blockquote>"Semântica é o significado dos vocábulos, por oposição à sua forma"</blockquote> Com essa tag o texto é destacado do texto corrido, dando um espaço na margem esquerda, dando uma sensação de citação. Podemos também colocar o link para o texto original, usando o parâmetro cite dentro da tag</p>
-    <blockquote cite="https://www.martinsfontespaulista.com.br/php-a-biblia-53304.aspx/p">O PHP é uma linguagem para a criação de scripts para web do lado servidor embutidos em HTML, cujo código-font é aberto, e que é compatível com os mais importantes servidores web (especialmente Apache)</blockquote>
-
-    <h3>Abreviações</h3>
-    <abbr title="Hyper Text Markup Language">HTML</abbr>
-    <abbr title="Cascading Style Sheets">CSS</abbr>
-    <p>Usando o title para indicar o significado da sigla, ao parar o mouse sobre o ABREVIAÇÃO vai aparecer o conteúdo que esta no title</p>
-
-    <h3>&lt;bdo&gl;</h3>
-    <p>Essa tag <abbr title="bi-directional override">BDO</abbr> passei o mouse sobre o sigla para ver o significado, ela coloca o texto digitado invertido, ele possui 2 configurações no parametro dir "direção do texto" rtl ou ltr.</p>
-    <p>rtl = da direita para a esquerda (right-to-left) <br>
-        ltr = da esquerda para a direita (left-to-right).
-    </p>
-    <h2>Texto Invertido</h2>
-    <bdo dir="rtl">Este texto todo está invertido no formato RIGHT-TO-LEFT</bdo><br>
-    <bdo dir="ltr">Este texto todo está invertido no formato RIGHT-TO-LEFT</bdo>
 </body>
 </html>
