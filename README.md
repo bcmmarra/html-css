@@ -1,15 +1,4 @@
 # html-css
- Curso de HTML5 E CSS3 do CursoemVídeo
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 027</title>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
-   
-</head>
 <body>
 <header id="topo">
     <h1>Curso em Video</h1>
