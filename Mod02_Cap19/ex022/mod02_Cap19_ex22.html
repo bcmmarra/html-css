@@ -7,36 +7,70 @@
     <link rel="stylesheet" href="../../style.css">
     <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
     <style>
+        body{
+            background-image: url(imagens/wallpaper004.jpg);
+        }
         h2{
             font-family: var(--fonte-destaque);
             color:var(--cor5);
         }
-
-        #q1{
+        .div{
             display: inline-block;
             border: 1px solid #006400;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        article > p{
+            text-indent: 20px;
+        }
+
+        #q1{
             background-color: #52ff52;
             width: 200px;
             height: 200px;
             margin: 10px;
         }
-
         #q2{
-            display: inline-block;
-            border: 1px solid #006400;
             background-image: linear-gradient(to bottom, orange, red);
             width: 200px;
             height: 200px;
             margin: 10px;
         }
-
         #q3{
-            display: inline-block;
-            border: 1px solid #006400;
             background-image: url(imagens/pattern001.png);
             width: 200px;
             height: 200px;
             margin: 10px;
+        }
+        #q4{ /*Configuração Padrão, a imagem vai ser repetir até cobrir todo o espaço disponivel, mesmo que precise cortar parte da imagem.*/
+            display: block;
+            margin: auto, 10px;
+            background-image: url(imagens/pattern002.png);
+            width: 900px;
+        }
+        #q5{ /*Configuração para repetir apenas no eixo x do espaço "horizontal".*/
+            display: block;
+            margin: auto, 10px;
+            background-image: url(imagens/pattern002.png);
+            background-repeat: repeat-x;
+            width: 900px;
+        }
+        #q6{ /*Configuração para repetir apenas no eixo y do espaço "Vertical".*/
+            display: block;
+            margin: auto, 10px;
+            background-image: url(imagens/pattern002.png);
+            background-repeat: repeat-y;
+            width: 900px;
+        }
+        #q7{ /*Configuração para não repetir a imagem, a imagem vai mostrar no seu tamanho Padrão apenas 1 vez.*/
+            display: block;
+            margin: auto, 10px;
+            background-image: url(imagens/pattern002.png);
+            background-repeat: no-repeat;
+
+            width: 900px;
         }
     </style>
 </head>
@@ -61,15 +95,24 @@
         </aside>
         <article>
             <h2>Imagens de Fundo</h2>
-            <div id="q1"></div>
-            <div id="q2"></div>
-            <div id="q3"></div>
+            <div class="div" id="q1"></div>
+            <div class="div" id="q2"></div>
+            <div class="div" id="q3"></div>
         </article>
         <article>
             <h2>Imagens de Fundo</h2>
-            <div id="q1"></div>
-            <div id="q2"></div>
-            <div id="q3"></div>
+            
+            <p>Configuração Padrão, a imagem vai ser repetir até cobrir todo o espaço disponivel, mesmo que precise cortar parte da imagem.</p>
+            <div class="div" id="q4"></div>
+            
+            <p>Configuração para repetir apenas no eixo x do espaço "horizontal".</p>
+            <div class="div" id="q5"></div>
+            
+            <p>Configuração para repetir apenas no eixo y do espaço "Vertical".</p>
+            <div class="div" id="q6"></div>
+            
+            <p>Configuração para não repetir a imagem, a imagem vai mostrar no seu tamanho Padrão apenas 1 vez.</p>
+            <div class="div" id="q7"></div>
         </article>
     </section>
 </main>
