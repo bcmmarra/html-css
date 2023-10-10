@@ -7,37 +7,43 @@
     <link rel="stylesheet" href="../../style.css">
     <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
     <style>
+
+        /*Adiciona a Imagem no fundo do elemento, neste caso do elemento body*/
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+        }
         h2{
             font-family: var(--fonte-destaque);
             color:var(--cor5);
         }
+        .div{
+            display: inline-block;
+            border: 1px solid #006400;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
 
+        /*Adiciona uma cor no fundo do elemento, neste caso na div q1, para adiconar cor usa a propriedade backgroud-color*/
         #q1{
-            display: inline-block;
-            border: 1px solid #006400;
             background-color: #52ff52;
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-
+            }
+    
+        /*Adiciona uma cor em degrade do elemento, neste caso na div q2, para adicionar o degrade usa a propriedade backggroud-image*/
         #q2{
-            display: inline-block;
-            border: 1px solid #006400;
             background-image: linear-gradient(to bottom, orange, red);
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-
+            }
+        
+        /*Adiciona uma imagem no fundo do elemento, neste caso na div q3, para adicionar a imagem usa a propriedade backggroud-image indicando a URL interna ou externa*/
         #q3{
-            display: inline-block;
-            border: 1px solid #006400;
             background-image: url(imagens/pattern001.png);
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
+            }
+            
+        /*Adiciona uma imagem no fundo do elemento, neste caso na div q3, para adicionar a imagem usa a propriedade backggroud-image indicando a URL interna ou externa*/
+        #q3{
+            background-image: url(imagens/pattern001.png);
+            }
+        
     </style>
 </head>
 <body>
@@ -61,15 +67,15 @@
         </aside>
         <article>
             <h2>Imagens de Fundo</h2>
-            <div id="q1"></div>
-            <div id="q2"></div>
-            <div id="q3"></div>
+            <div class="div" id="q1"></div>
+            <div class="div" id="q2"></div>
+            <div class="div" id="q3"></div>
         </article>
         <article>
             <h2>Imagens de Fundo</h2>
-            <div id="q1"></div>
-            <div id="q2"></div>
-            <div id="q3"></div>
+            <div class="div" id="q4"></div>
+            <div class="div" id="q5"></div>
+            <div class="div" id="q6"></div>
         </article>
     </section>
 </main>
