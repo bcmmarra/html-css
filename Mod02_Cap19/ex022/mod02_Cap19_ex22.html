@@ -5,76 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 022</title>
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="image.css">
     <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
-    <style>
-
-        /*Adiciona a Imagem no fundo do elemento, neste caso do elemento body*/
-        body{
-            background-image: url('imagens/wallpaper001.jpg');
-        }
-        h2{
-            font-family: var(--fonte-destaque);
-            color:var(--cor5);
-        }
-        .div{
-            display: inline-block;
-            border: 1px solid #006400;
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-
-        article > p{
-            text-indent: 20px;
-        }
-
-        #q1{
-            background-color: #52ff52;
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-        #q2{
-            background-image: linear-gradient(to bottom, orange, red);
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-        #q3{
-            background-image: url(imagens/pattern001.png);
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-        #q4{ /*Configuração Padrão, a imagem vai ser repetir até cobrir todo o espaço disponivel, mesmo que precise cortar parte da imagem.*/
-            display: block;
-            margin: auto, 10px;
-            background-image: url(imagens/pattern002.png);
-            width: 900px;
-        }
-        #q5{ /*Configuração para repetir apenas no eixo x do espaço "horizontal".*/
-            display: block;
-            margin: auto, 10px;
-            background-image: url(imagens/pattern002.png);
-            background-repeat: repeat-x;
-            width: 900px;
-        }
-        #q6{ /*Configuração para repetir apenas no eixo y do espaço "Vertical".*/
-            display: block;
-            margin: auto, 10px;
-            background-image: url(imagens/pattern002.png);
-            background-repeat: repeat-y;
-            width: 900px;
-        }
-        #q7{ /*Configuração para não repetir a imagem, a imagem vai mostrar no seu tamanho Padrão apenas 1 vez.*/
-            display: block;
-            margin: auto, 10px;
-            background-image: url(imagens/pattern002.png);
-            background-repeat: no-repeat;
-
-            width: 900px;
-        }
-    </style>
 </head>
 <body>
 <header id="topo">
@@ -96,26 +28,115 @@
             </div>
         </aside>
         <article>
-            <h2>Imagens de Fundo</h2>
+            <h2>Planos de Fundo</h2>
             <div class="div" id="q1"></div>
             <div class="div" id="q2"></div>
             <div class="div" id="q3"></div>
         </article>
         <article>
-            <h2>Imagens de Fundo</h2>
+            <h2>Imagens Pequenas como Plano de Fundo</h2>
             
-            <p>Configuração Padrão, a imagem vai ser repetir até cobrir todo o espaço disponivel, mesmo que precise cortar parte da imagem.</p>
+            <p>background-repeat: repeat; ou deixa sem a declaração - Configuração Padrão, a imagem vai ser repetir até cobrir todo o espaço disponivel, mesmo que precise cortar parte da imagem.</p>
             <div class="div" id="q4"></div>
             
-            <p>Configuração para repetir apenas no eixo x do espaço "horizontal".</p>
+            <p>background-repeat: repeat-x; - Configuração para repetir apenas no eixo x do espaço "horizontal".</p>
             <div class="div" id="q5"></div>
             
-            <p>Configuração para repetir apenas no eixo y do espaço "Vertical".</p>
+            <p>background-repeat: repeat-y; - Configuração para repetir apenas no eixo y do espaço "Vertical".</p>
             <div class="div" id="q6"></div>
             
-            <p>Configuração para não repetir a imagem, a imagem vai mostrar no seu tamanho Padrão apenas 1 vez.</p>
+            <p>background-repeat: no-repeat; - Configuração para não repetir a imagem, a imagem vai mostrar no seu tamanho Padrão apenas 1 vez.</p>
             <div class="div" id="q7"></div>
         </article>
+        <article>
+            <h2>Imagens Grande como Plano de Fundo</h2>
+            
+            <p>Imagem no seu tamanho real.</p>
+            <div class="div" id="q8"></div>
+
+            <p>Imagem no seu tamanho real com divisão.</p>
+            <div class="div" id="q9"></div>
+            
+            <p>background-position: left top; - Configuração para aplicar a imagem no elemento, por padrão ele apresenta a imagem left top, ou seja, começa alinhado a esquerda na parte de cima da imagem.</p>
+            <div class="div" id="q10"></div>
+            
+            <p>background-position: center top; - Configuração para aplicar a imagem no elemento, ele apresenta a imagem center top, ou seja, começa centralizado na parte de cima e preenche o restante com as laterais da imagem.</p>
+            <div class="div" id="q11"></div>
+            
+            <p>background-position: right top; - Configuração para aplicar a imagem no elemento, ele apresenta a imagem right top, ou seja, começa alinhado a direita na parte de cima da imagem.</p>
+            <div class="div" id="q12"></div>
+
+            <p>background-position: left center; - Configuração para aplicar a imagem no elemento, ele apresenta a imagem left center, ou seja, começa alinhado a esquerda na parte do centro da imagem.</p>
+            <div class="div" id="q13"></div>
+
+            <p>background-position: center center; - Configuração para aplicar a imagem no elemento, ele apresenta a imagem center center, ou seja, começa centralizado ao centro da imagem tanto na horizonta como na vertical e preencher o espaço do elemento com as laterais.</p>
+            <div class="div" id="q14"></div>
+
+            <p>background-position: right center; - Configuração para aplicar a imagem no elemento, ele apresenta a imagem right top, ou seja, começa alinhado a direita na parte do centro da imagem.</p>
+            <div class="div" id="q15"></div>
+
+            <p>background-position: left bottom; - Configuração para aplicar a imagem no elemento, ele apresenta a imagem left bottom, ou seja, começa alinhado a esquerda na parte de baixo da imagem.</p>
+            <div class="div" id="q16"></div>
+
+            <p>background-position: center bottom; - Configuração para aplicar a imagem no elemento, ele apresenta a imagem center bottom, ou seja, começa centralizado na parte de baixo e preenche o restante com as laterais da imagem.</p>
+            <div class="div" id="q17"></div>
+
+            <p>background-position: right bottom; - Configuração para aplicar a imagem no elemento, ele apresenta a imagem right bottom, ou seja, começa alinhado a direita na parte de baixo da imagem.</p>
+            <div class="div" id="q18"></div>
+        </article>
+        <article>
+            <h2>Imagens Grande como Plano de Fundo</h2>
+            <p> Outra coisa que podemos fazer é redimensionar a imagem para forçá-la a caber na
+                caixa. Por padrão, nenhum redimensionamento será aplicado, e a imagem será
+                exibida do seu tamanho natural. Porém, podemos usar a propriedade backgroundsize
+                para alterar esse comportamento.</p>
+                      
+            <p>background-size: 100px; - Colocando essa opção ele vai reduzir a imagem para o comprimento definido. até completar todo o espaço do elemento.</p>
+            <div class="div" id="q19"></div>
+            
+            <p>background-size: 100%; - Colocando essa opção ele vai reduzir a imagem para o comprimento 100% do espaço da caixa até completar todo o espaço do elemento e se a altura for maior ele vai repetir a menos que coloquemos a opção no-repet e neste caso o espaço vai ficar sem a imagem de fundo.</p>
+            <div class="div" id="q20"></div>
+
+            <p>background-size: cover; - Colocando essa opção ele muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela, sem nenhum corte.</p>
+            <div class="div" id="q21"></div>
+
+            <p>background-size: contain; - Colocando essa opção ele redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.</p>
+            <div class="div" id="q22"></div>
+        </article>
+        <article>
+            <h2>Imagens Grande como Plano de Fundo</h2>
+            <p> A última propriedade que podemos configurar é o vínculo (attachment) da imagem
+                de fundo com o resto do documento, principalmente se o conteúdo for maior do que a
+                altura da página e seja necessário vazar uma rolagem vertical.</p>
+                      
+            <div class="div" id="q23"></div>
+
+            <p>background-attachment: scroll; Padrão a imagem de fundo vai rolar junto com o conteúdo.</p>
+            <div class="div" id="q24"></div>
+
+            <p>background-attachment: fixed; A imagem de fundo vai ficar fixada enquanto o conteúdo vai sendo rolado.</p>
+            <div class="div" id="q25"></div>
+        </article>
+
+        <article>
+            <h2>Simplificando as coisas</h2>
+            <p>Assim como já vimos várias vezes em nosso material, existe também a possibilidade de usar uma shorthand para simplificar o uso de propriedades que se apliquem ao fundo de uma caixa. A propriedade abreviada background pode ser declarada agrupando as seguintes configurações:</p>
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-position</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+            </ul>
+            <p> Sendo assim, no lugar de usar:</p>
+
+            <ul>
+                <li>background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed</li>
+            </ul>
+        </article>
+
+
+
     </section>
 </main>
 
