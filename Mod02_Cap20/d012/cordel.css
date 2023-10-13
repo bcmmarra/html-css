@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+
+#cordel_header{
+    height: 200px;
+    background-color: black;
+    margin: auto;
+}
+#cordel_titulo{
+    font-family: "Passion One", cursive;
+    font-size: 5em;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 8%;
+}
+#cordel_header > p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+#cordel_header > p >a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+    text-decoration: none;
+}
+p{
+    font-family: "Sriracha", cursive;
+    font-size: 2em;
+
+}
