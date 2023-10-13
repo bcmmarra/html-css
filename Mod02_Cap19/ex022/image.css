@@ -215,3 +215,25 @@ li{
 }
 
 /*Simplificando as coisas - shorthand*/
+
+
+/*Centralizando elemento verticalmente*/
+div#fora{ 
+    position: relative; /*position: relative, deixa o elemento ajustavel usando as propriedades top e left*/
+    left: 50px;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: #006400;
+}
+
+div#dentro{
+    position: absolute; /*position: absolute, deixa o elemento ajustavel dentro de um elemento relative*/
+    left: 50%;          /*usando as propriedades top e left levando o elemento para o ponto central*/
+    top: 50%;
+    transform: translate(-50%, -50%); /*Essa propriedade puxa o elemento para traz 50% da posição indicada*/
+    height: 200px;                    /*pela propriedade left e top*/  
+    width: 200px;
+    border: 1px solid black;
+    background-color: #52ff52;
+}

@@ -6,7 +6,27 @@
     <title>Desafio 011</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
-   
+   <style>
+        div.espaco{ 
+            position: relative;
+            height: 500px;
+            width: 100%;
+            margin: auto;
+            background-image: url(imagens/espaco.jpg);
+            background-size: cover;
+        }
+        div.astronauta{
+            position: absolute;
+            height: 200px;  
+            width: 200px;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(imagens/astronauta.png);
+            background-size: 100%;
+        }    
+   </style>
 </head>
 <body>
 <header id="topo">
@@ -23,9 +43,8 @@
     <section class="exercicios">
         <aside class="exercicios-conteudo">
             <h1 class="header_conteudo">DESAFIO 011</h1>
-            <p>Aguardando a publicação do Desafio 011.</p>
-            <div class="container">
-                <img src="../../assets/tagPadrao.png" alt="TagMatrix">
+            <div class="espaco">
+                <div class="astronauta"></div>
             </div>
         </aside>
     </section>
