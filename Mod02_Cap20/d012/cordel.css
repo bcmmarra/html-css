@@ -71,8 +71,8 @@ html, body{
 
 /*Main Aside*/
 .desafio-title{
-    border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 10px 0px;
+    padding-bottom: 0px;
 }
 .desafio-conteudo{
     border-radius: 10px;
@@ -123,13 +123,13 @@ html, body{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 30px;
     line-height: 2em;
     font-family: "Sriracha", cursive;
     font-size: 3.5vw;
 }
 .normal{
     color: black;
+    padding-left: 30px;
 }
 .normal>p{
     padding-bottom: 2em;
@@ -138,12 +138,17 @@ section#paralax-img{
     background-image: url(imagens/background001.jpg);
     background-position: right center;
 }
+section#paralax-img2{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
 .paralax{
     background-color: rgba(0, 0, 0, 0.411);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover; 
     background-attachment: fixed;
+    padding-left: 30px;
 }
 .paralax>p{
     display: inline-block;
@@ -151,7 +156,16 @@ section#paralax-img{
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px balck;
 }
-.footer{
+#normal-last>.p{
+    padding-bottom: 0px;
+}
+.exercicios-conteudo>.container{
+    text-align: center;
+}
+.exercicios-conteudo>.container>a>img{
+    width: 200px;
+}
+footer {
     text-align: center;
     margin: auto;
     padding: 10px;
@@ -159,19 +173,7 @@ section#paralax-img{
     background-color: black;
     color: white;
     box-shadow: 0px 0px 6px #eaeaea;
-    border-radius: 10px;
-}
-.footer>a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-footer {
-    background-color: var(--cor5);
-    color: var(--cor1);
-    padding: 20px;
-    text-align: center;
-    font-family: var(--fonte-padrao);
+    border-radius: 0px 0px 10px 10px;
     font-weight: bold;
     box-shadow: 0px 0px 6px #eaeaea;
     border-radius: 10px;
@@ -185,15 +187,14 @@ footer > p{
     font-weight: bold;
     margin: 0px;
 }
-footer > a{
+footer > a, p>a{
     text-decoration: none;
     color: var(--cor1);
     font-weight: bold;
     margin-left: 20px;
     padding: 8px;
-
 }
-footer > a:hover{
+footer > a:hover, p>a:hover{
     text-decoration: underline;
     font-weight: bold;
     color: var(--cor5);
