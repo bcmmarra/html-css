@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 023.6 - Mesclagem de Células</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
+   <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 400px;
+        position: relative;
+        border-collapse: collapse; /*Propriedade para deixa a borda unica, por padrão fica 2 linhas*/
+        margin: auto;
+        margin-bottom: 10px;
+        background-color: white;
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid black;
+        background-color: darkgrey;
+    }
+    thead > tr > th{
+        position: sticky;
+        top: -1px; /* no Google Chrome se colocar "0" ele deixa um espaço no navegador, então a dica é colocar -1px */
+        background-color: darkgrey;
+    }
+    th,td{
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center; /*Alinhamento Horizontal - Padrão é rigth as opções são rigth, left, center*/
+        vertical-align: middle; /*Alinhamento Vertical - Padrão é middle as opções são middle, bottom, top*/
+    }
+    th{
+        background-color: darkgrey;
+    }
+    ol {
+        display: block;
+        list-style-type: decimal;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    aside{
+        margin-bottom: 10px;
+    }
+    
+   </style>
+</head>
+<body>
+<header id="topo">
+    <h1>Curso em Video</h1>
+    <p>Plataforma de ensino de tecnologia à distância, lançado em 2013 pelo professor Gustavo Guanabara.</p>
+    <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#exercicios">Exercícios</a>
+        <a href="../../index.html#desafio">Desafios</a>
+        <a href="../../index.html#download">Downloads PDF</a>
+    </nav>
+</header>
+<main>
+    <section class="exercicios">
+        <aside class="exercicios-conteudo">
+            <h1 class="header_conteudo">EXERCÍCIO 023</h1>
+            <div class="container">
+                <img src="../../assets/tagPadrao.png" alt="TagMatrix">
+            </div>
+        </aside>
+    </section>
+    <h1 class="header_conteudo">Mesclagem de Células</h1>
+
+    <section class="tabela">
+        <aside>
+            <p>Passo a passo de como colocar o Cabeçalho FIXO</p>
+            
+            <ol>
+                <li>No CSS colocar table {position: relative;}</li>
+                <li>Depois thead > tr > th {position: sticky;}</li>
+                <li>Aindo no thead > tr > th {top: 0;} = Dica: no Google Chrome se colocar "0" ele deixa um espaço no navegador, então a dica é colocar -1px</li>
+                <li>E por final repetir o {background-color: darkgrey;}</li>
+            </ol>
+    
+        </aside>
+
+        <table>
+            <caption>Tabela de Estudos</caption>
+            <thead> <!-- Area do cabeçalho da tabela (Semântica)-->
+                <tr>
+                    <th scope="col">Coluna 1</th>
+                    <th scope="col" colspan="2">Coluna 2</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- Area do Corpo da tabela (Semântica)-->
+                <tr>
+                    <td rowspan="2">Célula 1</td>
+                    <td>Célula 2</td>
+                    <td>Célula 3</td>
+                </tr>
+                <tr>
+                    <td>Célula 4</td>
+                    <td>Célula 5</td>
+                </tr>
+                <tr>
+                    <td>Célula 6</td>
+                    <td colspan="2">Célula 7</td>
+                </tr>
+                <tr>
+                    <td>Célula 8</td>
+                    <td>Célula 9</td>
+                    <td>Célula 10</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<!--Links Referência Externos-->
+<aside class="exercicios-conteudo">
+    <div class="container">
+        <a href="https://www.flaticon.com/br/icones-gratis/compartilhar" target="_blank" title="compartilhar ícones"><img src="../../assets/flaticon_negative.png" alt="Flaticon" class="flaticon" title="Compartilhar ícones criados por Dave Gandy - Flaticon"></a>
+        <a href="https://www.youtube.com/@CursoemVideo" id="desafio" title="Plataforma Curso em Video" target="_blank"><img src="../../assets/cursoemvideo-logo.png" alt="Curso em Video" title="Curso em Video"></a>
+    </div>
+</aside>
+
+<footer>
+    By Bruno Marra <a href="https://github.com/bcmmarra" target="_blank" rel="external"> <img src="../../assets/Compartilhamento.png" alt="Link GitHub"> Repositório GitHub <img src="../../assets/Compartilhamento.png" alt="Link GitHub"></a>
+    <P>Repositório público Bruno Marra do Curso em Video - Professor Gustavo Guanabara</P>
+</footer>
+</body>
+</html>
