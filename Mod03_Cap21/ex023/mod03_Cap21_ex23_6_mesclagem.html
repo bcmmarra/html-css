@@ -39,9 +39,9 @@
     th{
         background-color: darkgrey;
     }
-    ol {
+    ul {
         display: block;
-        list-style-type: decimal;
+        list-style-type: disc;
         margin-block-start: 1em;
         margin-block-end: 1em;
         margin-inline-start: 0px;
@@ -78,14 +78,14 @@
 
     <section class="tabela">
         <aside>
-            <p>Passo a passo de como colocar o Cabeçalho FIXO</p>
+            <p>Passo a passo de como mesclar linhas e colunas</p>
             
-            <ol>
-                <li>No CSS colocar table {position: relative;}</li>
-                <li>Depois thead > tr > th {position: sticky;}</li>
-                <li>Aindo no thead > tr > th {top: 0;} = Dica: no Google Chrome se colocar "0" ele deixa um espaço no navegador, então a dica é colocar -1px</li>
-                <li>E por final repetir o {background-color: darkgrey;}</li>
-            </ol>
+            <ul>
+                <li>Para mesclar as linhas usa a propriedade rowspan, essa configuração vai agrupar a quantidade de linha indicada.</li>
+                <p>Exemplo aplicado na célula 1 que esta ocupando 2 linhas.</p>
+                <li>Para mescla as colunas usa a propriedades colspan, essa configuração vai agrupar a quantidade de coluna indicada.</li>
+                <p>Exemplo aplicado na coluna 2 que esta ocupando 2 colunas e na célula 9 que esta ocupando 3 colunas.</p>
+            </ul>
     
         </aside>
 
@@ -110,12 +110,11 @@
                 </tr>
                 <tr>
                     <td>Célula 6</td>
-                    <td colspan="2">Célula 7</td>
+                    <td>Célula 7</td>
+                    <td>Célula 8</td>
                 </tr>
                 <tr>
-                    <td>Célula 8</td>
-                    <td>Célula 9</td>
-                    <td>Célula 10</td>
+                    <td colspan="3">Célula 9</td>
                 </tr>
             </tbody>
         </table>
