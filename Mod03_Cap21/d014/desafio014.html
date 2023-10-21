@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 014</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
+    <style>
+        strong{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        aside>strong>p{
+            text-align: center;
+            margin-top: 5px;
+        }
+        .desafio_tabela{
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .desafio_tabela>h2{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            width: 500px;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid black;
+            background-color: #666666;
+        }
+        thead>tr>th{
+            border: 1px solid black;
+            background-color: #666666;
+            color: white;
+            text-align: center;
+            padding: 8px;
+        }
+        tbody>tr>th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        tbody>.totalmedia{
+            background-color: #666666;
+            color: white;
+        }
+        tbody>.totalmedia>th{
+            text-align: left;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .num{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="topo">
+        <h1>Curso em Video</h1>
+        <p>Plataforma de ensino de tecnologia à distância, lançado em 2013 pelo professor Gustavo Guanabara.</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html#exercicios">Exercícios</a>
+            <a href="../../index.html#desafio">Desafios</a>
+            <a href="../../index.html#download">Downloads PDF</a>
+        </nav>
+    </header>
+    <main>
+        <section class="desafio-title">
+            <aside class="desafio-conteudo">
+                <h1 class="header_conteudo">DESAFIO 014</h1>
+                <div class="container">
+                    <img src="../../assets/tagPadrao.png" alt="TagMatrix">
+                </div>
+            </aside>
+        </section>
+
+        <aside>
+            <strong>
+                <p>Descrição do Desafio 014:</p>
+            </strong>
+            <p>Fazer tabela completa, com scope, mesclagem de linhas e colunas e style.</p>
+        </aside>
+
+        <section class="desafio_tabela">
+            <table>
+                <caption>BOLETIM</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Área</th>
+                        <th rowspan="2" scope="col">Disciplinas</th>
+                        <th colspan="2" scope="colgroup">Notas</th>
+                        <th rowspan="2" scope="col">Média</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Nota 1</th>
+                        <th scope="col">Nota 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="4" scope="rowgroup">Exatas</th>
+                        <td>Matemática</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Física</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Química</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Biologia</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                    </tr>
+                    <tr class="totalmedia">
+                        <th colspan="4" scope="row">Média de Exatas</th>
+                        <td class="num">0.0</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Humanas</th>
+                        <td>História</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                        <td class="num">0.0</td>
+                    </tr>
+                    <tr class="totalmedia">
+                        <th colspan="4" scope="rowgroup">Média de Humanas</th>
+                        <td class="num">0.0</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </section>
+    </main>
+
+<!--Links Referência Externos-->
+<aside class="exercicios-conteudo">
+    <div class="container">
+        <a href="https://www.flaticon.com/br/icones-gratis/compartilhar" target="_blank" title="compartilhar ícones"><img src="../../assets/flaticon_negative.png" alt="Flaticon" class="flaticon" title="Compartilhar ícones criados por Dave Gandy - Flaticon"></a>
+        <a href="https://www.youtube.com/@CursoemVideo" id="desafio" title="Plataforma Curso em Video" target="_blank"><img src="../../assets/cursoemvideo-logo.png" alt="Curso em Video" title="Curso em Video"></a>
+    </div>
+</aside>
+
+<footer>
+    By Bruno Marra <a href="https://github.com/bcmmarra" target="_blank" rel="external"> <img src="../../assets/Compartilhamento.png" alt="Link GitHub"> Repositório GitHub <img src="../../assets/Compartilhamento.png" alt="Link GitHub"></a>
+    <P>Repositório público Bruno Marra do Curso em Video - Professor Gustavo Guanabara</P>
+</footer>
+</body>
+</html>
