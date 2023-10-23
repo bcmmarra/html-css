@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 024.4 - Iframe por Código</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../assets/favicon-_2_.ico" type="image/x-icon">
+   <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 800px; /*Largura da tabela*/
+        height: 600px; /*Altura da tabela*/
+        border-collapse: collapse; /*Propriedade para deixa a borda unica, por padrão fica 2 linhas*/
+        margin: auto;
+        margin-bottom: 10px;
+        background-color: white;
+    }
+    th,td{
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center; /*Alinhamento Horizontal - Padrão é rigth as opções são rigth, left, center*/
+        vertical-align: middle; /*Alinhamento Vertical - Padrão é middle as opções são middle, bottom, top*/
+    }
+    th{
+        background-color: darkgrey;
+    }
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    iframe{
+        display: block;
+        width: 700px;
+        height: 480px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .iframe>h2{
+        margin-bottom: 10px;
+    }
+   </style>
+</head>
+<body>
+<header id="topo">
+    <h1>Curso em Video</h1>
+    <p>Plataforma de ensino de tecnologia à distância, lançado em 2013 pelo professor Gustavo Guanabara.</p>
+    <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#exercicios">Exercícios</a>
+        <a href="../../index.html#desafio">Desafios</a>
+        <a href="../../index.html#download">Downloads PDF</a>
+    </nav>
+</header>
+<main>
+    <section class="exercicios">
+        <aside class="exercicios-conteudo">
+            <h1 class="header_conteudo">EXERCÍCIO 024</h1>
+            <div class="container">
+                <img src="../../assets/tagPadrao.png" alt="TagMatrix">
+            </div>
+        </aside>
+    </section>
+    <section class="iframe">
+        <h1 class="header_conteudo">Iframe por Código</h1>
+        <h2>Conteúdo no iframe por código</h2>
+        <p>Atributo srcdoc, é utilizado para colocar uma iframe estatico, ao inves de colocar uma página externa. Não tem muito uso.</p>
+        <ul>
+            <li><a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_1_tabela_simples.html" target="iframe">Tabela Simples</a></li>
+            <li><a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_5_cabecalho_fixo.html" target="iframe">Tabela com Cabeçalho Fixo</a></li>
+            <li><a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_7_tabela_completa.html" target="iframe">Tabela Completa</a></li>
+        </ul>
+        <iframe src="" name="iframe" srcdoc="<h1 style='text-align: center;'> Escolha uma opção acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellendus, nam fuga voluptates distinctio facere illo animi. Esse a eius sunt atque quaerat aspernatur, cumque dolorem fugit modi rem cupiditate!</p>"> <!-- Colocamos o codigo básico dentro do atribute srcdoc, ele não aceita muito coisa e estilos. Se precisar colocar alguma coisa que precise ser em "aspas duplas" devemos colocar com 'aspas simples' -->
+            <a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_1_tabela_simples.html" target="iframe">Tabela Simples</a>
+            <a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_5_cabecalho_fixo.html" target="iframe">Tabela com Cabeçalho Fixo</a>
+            <a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_7_tabela_completa.html" target="iframe">Tabela Completa</a>
+        </iframe>
+    </section>
+</main>
+
+<!--Links Referência Externos-->
+<aside class="exercicios-conteudo">
+    <div class="container">
+        <a href="https://www.flaticon.com/br/icones-gratis/compartilhar" target="_blank" title="compartilhar ícones"><img src="../../assets/flaticon_negative.png" alt="Flaticon" class="flaticon" title="Compartilhar ícones criados por Dave Gandy - Flaticon"></a>
+        <a href="https://www.youtube.com/@CursoemVideo" id="desafio" title="Plataforma Curso em Video" target="_blank"><img src="../../assets/cursoemvideo-logo.png" alt="Curso em Video" title="Curso em Video"></a>
+    </div>
+</aside>
+
+<footer>
+    By Bruno Marra <a href="https://github.com/bcmmarra" target="_blank" rel="external"> <img src="../../assets/Compartilhamento.png" alt="Link GitHub"> Repositório GitHub <img src="../../assets/Compartilhamento.png" alt="Link GitHub"></a>
+    <P>Repositório público Bruno Marra do Curso em Video - Professor Gustavo Guanabara</P>
+</footer>
+</body>
+</html>
