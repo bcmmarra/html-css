@@ -71,10 +71,20 @@
     </section>
     <section class="iframe">
         <h1 class="header_conteudo">Iframe</h1>
-        <h2>Navegando no Iframe</h2>
+        <h2>Navegando entre Iframe</h2>
+        <p>Para colocar o link para abrir diretamente dentro do iframe, devemos dar um name para o iframe e no link configuramos o target com o name do iframe.</p>
 
-        <iframe src="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_7_tabela_completa.html" frameborder="0">
-            <p>Acesse a nossa <a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_7_tabela_completa.html" target="_blank">tabela</a></p>
+        <ul>
+            <li><a href="../../index.html" target="iframe">Home</a></li>
+            <li><a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_1_tabela_simples.html" target="iframe">Tabela Simples</a></li>
+            <li><a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_5_cabecalho_fixo.html" target="iframe">Tabela com Cabeçalho Fixo</a></li>
+            <li><a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_7_tabela_completa.html" target="iframe">Tabela Completa</a></li>
+        </ul>
+
+        <iframe src="../../index.html" name="iframe"> <!-- Colocamos o name no target do link -->
+            <a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_1_tabela_simples.html" target="iframe">Tabela Simples</a>
+            <a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_5_cabecalho_fixo.html" target="iframe">Tabela com Cabeçalho Fixo</a>
+            <a href="../../Mod03_Cap21/ex023/mod03_Cap21_ex23_7_tabela_completa.html" target="iframe">Tabela Completa</a>
         </iframe>
     </section>
 </main>
