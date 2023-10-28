@@ -22,7 +22,7 @@ section#telefone{
     position: absolute; /*Para conseguir colocar o outro elemento configurado apartir deste elemente*/
     top: 50%; /*Posicionamento do elemento */
     left: 50%;
-    transform: translate(-55%, -50%); /*Fim do posicionamento*/
+    transform: translate(-61%, -50%); /*Fim do posicionamento*/
     width: 311px; /*Tamanho do elemento*/
     height: 627px; /*Tamanho do elemento*/
     background: url(../imagens/frame-iphone.png) no-repeat;
@@ -38,7 +38,9 @@ section#telefone{
 }
 #redes-sociais{
     text-align: right;
+    margin: 30px;
 }
+
 #redes-sociais img{
     width: 50px;
     border-radius: 50%;
