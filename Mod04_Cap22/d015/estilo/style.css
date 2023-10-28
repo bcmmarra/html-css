@@ -6,32 +6,35 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 html, body{
+/* Indica que o tamanho do elemento vai cobrir a tela inteira 100% a area aberta.*/
     height: 100vh;
     width: 100vw;
+/*Fim*/
+
+/*Configuração para adicionar a imagem de fundo e formatação da imagem*/
     background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+/*Fim*/
 }
-main{
-    position: relative;
-    height: 100vh;
-}
+
 section#telefone{
-    position: absolute;
-    top: 50%;
+    position: absolute; /*Para conseguir colocar o outro elemento configurado apartir deste elemente*/
+    top: 50%; /*Posicionamento do elemento */
     left: 50%;
-    transform: translate(-50%, -50%);
-    height: 627px;
-    width: 311px;
+    transform: translate(-50%, -50%); /*Fim do posicionamento*/
+    width: 311px; /*Tamanho do elemento*/
+    height: 627px; /*Tamanho do elemento*/
     background: url(../imagens/frame-iphone.png) no-repeat;
 }
 
 #tela{
-    position: relative;
-    top: 80px;
-    left: 22px;
-    width: 267px;
-    height: 472px;
+    position: relative; /*Para conseguir configurar este elemente em função das configurações do elemento relative*/
+    top: 83px;
+    left: 25px;
+    width: 262px;
+    height: 466px;
+    border: 0px;
 }
 #redes-sociais{
     text-align: right;

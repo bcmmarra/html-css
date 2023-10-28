@@ -1,0 +1,35 @@
+@charset "UFT-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+body{
+     /* Indica que o tamanho do elemento vai cobrir a tela inteira 100% a area aberta.*/
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    width: 100vw;
+}
+a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+    width: 100vw;
+    box-sizing: border-box; /*Colocar a borda do Hover dentro da imagem, sem movimentar as outras imagens.*/
+}
+a:hover{
+    border: 2px solid rgba(255, 255, 255, 0.623); /* Inclui uma bordar para dar destaque ao botão selecionado*/
+    transition: 0.1s;
+}
