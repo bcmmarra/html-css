@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Documentos da Proposta</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            position: relative;
+            border-collapse: collapse; /*Propriedade para deixa a borda unica, por padrão fica 2 linhas*/
+            margin: auto;
+            margin-bottom: 50px;
+            background-color: white;
+            border: 1px solid darkgrey;
+
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid darkgrey;
+            background-color: darkgrey;
+
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px; /* no Google Chrome se colocar "0" ele deixa um espaço no navegador, então a dica é colocar -1px */
+            background-color: darkgrey;
+            border: 1px solid darkgrey;
+
+        }
+        th,td{
+            border: 1px solid darkgrey;
+            padding: 5px;
+            text-align: center; /*Alinhamento Horizontal - Padrão é rigth as opções são rigth, left, center*/
+            vertical-align: middle; /*Alinhamento Vertical - Padrão é middle as opções são middle, bottom, top*/
+        }
+        th{
+            background-color: darkgrey;
+        }
+        tfoot > tr >td{
+            background-color: darkgrey;
+            font-weight: bold;
+        }
+        tfoot > tr > .arquivo{
+            font-weight: bold;
+            text-align: right;
+        }
+
+
+       </style>
+</head>
+<body>
+    <table>
+        <caption>DOCUMENTOS DO PROCESSO</caption>
+        <thead> <!-- Area do cabeçalho da tabela (Semântica)-->
+            <tr>
+                <th scope="col">DOCUMENTO</th>
+                <th scope="col" colspan="2">TIPO</th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- Area do Corpo da tabela (Semântica)-->
+            <tr>
+                <td>ARQUIVO 1</td>
+                <td colspan="2">
+                    <select name="tipo" id="tipo">
+                        <option value="1">DECLARAÇÃO</option>
+                        <option value="2">RESERVA DE PREÇO</option>
+                        <option value="3">ATA</option>
+                        <option value="4">CONTRATO</option>
+                        <option value="5">EMPENHO</option>
+                        <option value="6">NOTIFICAÇÃO</option>
+                        <option value="7">CARTAS</option>
+                        <option value="8">RECURSOS</option>
+                        <option value="9">OUTROS DOCUMENTOS</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><input type="file" value="ESCOLHER ARQUIVO"></td>
+                <td colspan="2"><input type="button" value="SALVAR"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+        <table>
+        <caption>DOCUMENTOS DO PROCESSO</caption>
+        <thead> <!-- Area do cabeçalho da tabela (Semântica)-->
+            <tr>
+                <th scope="col">DOCUMENTO</th>
+                <th scope="col">TIPO</th>
+                <th scope="col">DATA</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- Area do Corpo da tabela (Semântica)-->
+            <tr>
+                <td>ARQUIVO 1</td>
+                <td>RESERVA DE PREÇO</td>
+                <td>31/10/2023</td>
+                <td><a href="#"><img src="../../assets/dw.png" alt="Download"></a></td>
+            </tr>
+            <tr>
+                <td>ARQUIVO 2</td>
+                <td>RESERVA DE PREÇO</td>
+                <td>31/10/2023</td>
+                <td><a href="#"><img src="../../assets/dw.png" alt="Download"></a></td>
+            </tr>
+            <tr>
+                <td>ARQUIVO 3</td>
+                <td>DECLARACAO</td>
+                <td>31/10/2023</td>
+                <td><a href="#"><img src="../../assets/dw.png" alt="Download"></a></td>
+            </tr>
+            <tr>
+                <td>ARQUIVO 4</td>
+                <td>ATA</td>
+                <td>10/11/2023</td>
+                <td><a href="#"><img src="../../assets/dw.png" alt="Download"></a></td>
+            </tr>
+            <tr>
+                <td>ARQUIVO 5</td>
+                <td>CONTRATO</td>
+                <td>10/11/2023</td>
+                <td><a href="#"><img src="../../assets/dw.png" alt="Download"></a></td>
+            </tr>
+            <tr>
+                <td>ARQUIVO 6</td>
+                <td>EMPENHO</td>
+                <td>30/11/2023</td>
+                <td><a href="#"><img src="../../assets/dw.png" alt="Download"></a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="arquivo">TODOS OS ARQUIVOS</td>
+                <td><a href="#"><img src="../../assets/dw.png" alt="Download"></a></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
