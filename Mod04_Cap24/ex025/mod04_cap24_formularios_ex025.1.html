@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro FORMULÁRIO</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!--
+            1 - action é para onde os dados do formulário serão enviados.
+            2 - method é o método usado para enviar esses dados. GET é o padrão, se não for espeficicado o formulário vai usar o padrão. Outro metodo é o POST, que abrange mais recursos, porem não é possivel criar link de compartilhamento, por outro lado o método GET permite criar o link de compartilhamento mas é mais limitado.
+            3 - Autocomplete off desativa o autocomplete nos formulários, quando digitamos o sistema não vai apresentar uma sugestão
+        -->
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required>
+        <!--
+            1 - name: é mais útil para HTML e PHP 
+            2 - id: é mais útil para javascript
+            podendo ser o mesmo em ambos
+            3 - requered: torna o campo obrigatório
+        -->
+        </p>
+        <p>
+            <label for="isnome">Sobrenome:</label>
+            <input type="text" name="snome" id="isnome">
+        </p>
+        <p>
+            <label for="imail">E-mail:</label>
+            <input type="email" name="mail" id="imail">
+        </p>
+        <p>
+            <input type="submit" value="Cadastrar">
+        </p>
+    </form>
+</body>
+</html>
