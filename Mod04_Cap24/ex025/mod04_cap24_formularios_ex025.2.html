@@ -26,15 +26,18 @@
             6 - size: delimita o campo visual do campo, se for maior que o tamanho definido ele cria uma rolagem dentro do campo.
             7 - placeholder: Indica o que deve ser preenchido no campo especifico.
             8 - autocomplete: é para indicar o que o navegador deve sugerir como opção.
+                8.1 - username = indica que o navegador deve mostrar o campo salvo como usuário.
+                8.2a - current-password = indica senha atual (usado em tela de login)
+                8.2b - new-password = indica que o campo é de definição de nova senha. (usado em telas de recuperação de senha ou de cadastro)
         -->
         </p>
         <p>
             <label for="imail">E-mail:</label>
-            <input type="email" name="mail" id="imail" required placeholder="Digite seu e-mail" autocomplete="email">
+            <input type="email" name="mail" id="imail" requered placeholder="Digite seu e-mail" autocomplete="email">
         </p>
         <p>
             <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Digite sua Senha" autocomplete="current-password">
+            <input type="password" name="senha" id="isenha" requered minlength="8" maxlength="20" placeholder="Digite sua Senha" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Cadastrar">
