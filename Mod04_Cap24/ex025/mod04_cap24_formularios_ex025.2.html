@@ -6,7 +6,7 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>FORMULÁRIO</h1>
+    <h1>Logar aqui</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         <!--
             1 - action é para onde os dados do formulário serão enviados.
@@ -33,16 +33,85 @@
         </p>
         <p>
             <label for="imail">E-mail:</label>
-            <input type="email" name="mail" id="imail" requered placeholder="Digite seu e-mail" autocomplete="email">
+            <input type="email" name="mail" id="imail" required placeholder="Digite seu e-mail" autocomplete="email">
         </p>
         <p>
             <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" requered minlength="8" maxlength="20" placeholder="Digite sua Senha" autocomplete="current-password">
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Digite sua Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Logar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <h1>Cadastre-se Aqui</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icadUsuario">Usuário</label>
+            <input type="text" name="cadUsuario" id="icadUsuario" required minlength="8" maxlength="20" placeholder="Crie o seu Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="icadMail">E-mail:</label>
+            <input type="email" name="mail" id="icadMail" required placeholder="Digite seu e-mail" autocomplete="email">
+        </p>
+        <p>
+            <label for="icadSenha">Senha:</label>
+            <input type="password" name="senha" id="icadSenha" required minlength="8" maxlength="20" placeholder="Digite sua Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <label for="icadSenha2">Confirme Senha:</label>
+            <input type="password" name="senha" id="icadSenha2" required minlength="8" maxlength="20" placeholder="Confirme a sua Senha" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Cadastrar">
             <input type="reset" value="Limpar">
         </p>
+    </form>
+    
+    <h1>Deixe sua mensagem aqui</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="iusu" required minlength="8" maxlength="20" placeholder="Crie o seu Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="mail" id="iemail" required placeholder="Digite seu e-mail" autocomplete="email">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="senha" id="isen" required minlength="8" maxlength="20" placeholder="Digite sua Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <label for="imens">Mensagem</label><br>
+            <textarea name="mens" id="imens" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <h1>Outros elementos de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inum">Número</label>
+            <input type="number" name="num" id="inum">
+        </p>
+        <p>
+            <label for="imes">Mês</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="data">Data</label>
+            <input type="date" name="data" id="idata">
+        </p>
+        <p>
+            <label for="itime">Horário</label>
+            <input type="time" name="time" id="itime">
+        </p>
+        
     </form>
 </body>
 </html>
