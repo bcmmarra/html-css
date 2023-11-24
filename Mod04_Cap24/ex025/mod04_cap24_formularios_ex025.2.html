@@ -6,43 +6,72 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>FORMULÁRIO</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
-        <!--
-            1 - action é para onde os dados do formulário serão enviados.
-            2 - method é o método usado para enviar esses dados. GET é o padrão, se não for espeficicado o formulário vai usar o padrão. Outro metodo é o POST, que abrange mais recursos, porem não é possivel criar link de compartilhamento, por outro lado o método GET permite criar o link de compartilhamento mas é mais limitado.
-            3 - Autocomplete off desativa o autocomplete nos formulários, quando digitamos o sistema não vai apresentar uma sugestão. O padrão em formulário é ON
-        -->
+    <section class="cadastro">
+        <h1>CADASTRO</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <!--
+                1 - action é para onde os dados do formulário serão enviados.
+                2 - method é o método usado para enviar esses dados. GET é o padrão, se não for espeficicado o formulário vai usar o padrão. Outro metodo é o POST, que abrange mais recursos, porem não é possivel criar link de compartilhamento, por outro lado o método GET permite criar o link de compartilhamento mas é mais limitado.
+                3 - Autocomplete off desativa o autocomplete nos formulários, quando digitamos o sistema não vai apresentar uma sugestão. O padrão em formulário é ON
+            -->
+            <p>
+                <label for="iusuario">Usuário:</label>
+                <input type="text" name="usuario" id="iusuario" required minlength="3" maxlength="30" size="15" placeholder="Nome do usuário" autocomplete="username">
+            <!--
+                1 - name: é mais útil para HTML e PHP 
+                2 - id: é mais útil para javascript
+                podendo ser o mesmo em ambos
+                3 - requered: torna o campo obrigatório
+                4 - minlength: delimitar a quantidade de caractéres que o campo deve conter.
+                5 - maxlength: indica a quantidade máxima de caractéres o campo deve conter.
+                6 - size: delimita o campo visual do campo, se for maior que o tamanho definido ele cria uma rolagem dentro do campo.
+                7 - placeholder: Indica o que deve ser preenchido no campo especifico.
+                8 - autocomplete: é para indicar o que o navegador deve sugerir como opção.
+                    8.1 - username = indica que o navegador deve mostrar o campo salvo como usuário.
+                    8.2a - current-password = indica senha atual (usado em tela de login)
+                    8.2b - new-password = indica que o campo é de definição de nova senha. (usado em telas de recuperação de senha ou de cadastro)
+            -->
+            </p>
+            <p>
+                <label for="imail">E-mail:</label>
+                <input type="email" name="mail" id="imail" requered placeholder="Digite seu e-mail" autocomplete="email">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" requered minlength="8" maxlength="20" placeholder="Digite sua Senha" autocomplete="new-password">
+            </p>
+            <p>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </section>
+    <section class="login">
+        <h1>LOGIN</h1>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="ilogin">Login</label>
+                <input type="text" name="login" id="ilogin" required placeholder="Digite seu login" autocomplete="username">
+            </p>
+            <p>
+                <label for="ipassword">Senha</label>
+                <input type="password" name="password" id="ipassword" required placeholder="Digite sua Senha" autocomplete="current-password">
+            </p>
+            <p>
+                <input type="submit" value="Entrar">
+            </p>
+        </form>
+    </section>
+    <section>
+        <h1>Outros input</h1>
         <p>
-            <label for="iusuario">Usuário:</label>
-            <input type="text" name="usuario" id="iusuario" required minlength="3" maxlength="30" size="15" placeholder="Nome do usuário" autocomplete="username">
-        <!--
-            1 - name: é mais útil para HTML e PHP 
-            2 - id: é mais útil para javascript
-            podendo ser o mesmo em ambos
-            3 - requered: torna o campo obrigatório
-            4 - minlength: delimitar a quantidade de caractéres que o campo deve conter.
-            5 - maxlength: indica a quantidade máxima de caractéres o campo deve conter.
-            6 - size: delimita o campo visual do campo, se for maior que o tamanho definido ele cria uma rolagem dentro do campo.
-            7 - placeholder: Indica o que deve ser preenchido no campo especifico.
-            8 - autocomplete: é para indicar o que o navegador deve sugerir como opção.
-                8.1 - username = indica que o navegador deve mostrar o campo salvo como usuário.
-                8.2a - current-password = indica senha atual (usado em tela de login)
-                8.2b - new-password = indica que o campo é de definição de nova senha. (usado em telas de recuperação de senha ou de cadastro)
-        -->
+            <label for="inumero">Digite um número</label>
+            <input type="number" name="numero" id="inumero">
         </p>
-        <p>
-            <label for="imail">E-mail:</label>
-            <input type="email" name="mail" id="imail" requered placeholder="Digite seu e-mail" autocomplete="email">
-        </p>
-        <p>
-            <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" requered minlength="8" maxlength="20" placeholder="Digite sua Senha" autocomplete="current-password">
-        </p>
-        <p>
-            <input type="submit" value="Cadastrar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    </section>
+
+
+
+
 </body>
 </html>
