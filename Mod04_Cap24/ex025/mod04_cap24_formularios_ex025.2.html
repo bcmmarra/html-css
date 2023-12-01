@@ -27,9 +27,9 @@
             6 - size: delimita o campo visual do campo, se for maior que o tamanho definido ele cria uma rolagem dentro do campo.
             7 - placeholder: Indica o que deve ser preenchido no campo especifico.
             8 - autocomplete: é para indicar o que o navegador deve sugerir como opção.
-            8.1 - username = indica que o navegador deve mostrar o campo salvo como usuário.
-            8.2a - current-password = indica senha atual (usado em tela de login)
-            8.2b - new-password = indica que o campo é de definição de nova senha. (usado em telas de recuperação de senha ou de cadastro)
+                8.1 - username = indica que o navegador deve mostrar o campo salvo como usuário.
+                8.2a - current-password = indica senha atual (usado em tela de login)
+                8.2b - new-password = indica que o campo é de definição de nova senha. (usado em telas de recuperação de senha ou de cadastro)
             -->
         <p>
             <label for="imail">E-mail:</label>
@@ -44,7 +44,7 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
-    
+
     <hr>
     
     <h1>Cadastre-se Aqui</h1>
@@ -105,16 +105,21 @@
             <input type="number" name="num" id="inum">
         </p>
         <p>
+            <label for="inum">Nota</label>
+            <input type="number" name="nota" id="inota" min="0" max="10" placeholder="0 a 10" step="0.1">
+        </p>
+
+        <p>
             <label for="imes">Mês</label>
-            <input type="month" name="mes" id="imes">
+            <input type="month" name="mes" id="imes" value="2023-12">
         </p>
         <p>
             <label for="data">Data</label>
-            <input type="date" name="data" id="idata">
+            <input type="date" name="data" id="idata" value="2023-12-01">
         </p>
         <p>
             <label for="itime">Horário</label>
-            <input type="time" name="time" id="itime">
+            <input type="time" name="time" id="itime" value="12:30">
         </p>
         
     </form>
