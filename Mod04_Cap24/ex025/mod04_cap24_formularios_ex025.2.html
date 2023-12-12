@@ -286,9 +286,64 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
-    Parei aqui
-    Capítulo 24 Aula 11 – Elemento output em formulários HTML
 
+    
+    <hr>
+
+    <h1>Elemento output em formulários HTML</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--
+            oninput (programação Javascript) 
+                           oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                Vai mostrar a Soma dos elementos in1 + in2 no elemento isoma.
+        -->
+        <h2>Digite 2 números entre 0 e 50.</h2>
+        <p>
+           <label for="in1">Número 1:</label>
+           <input type="number" name="n1" id="in1" min="0" max="50" required
+           oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output id="isoma">0</output>
+        </p>
+
+        <p>
+            <label for="irange">Avaliação</label>
+            <input type="range" name="range" id="irange" min="0" max="10" value="5"
+            oninput="ivalue.innerHTML = Number(irange.value)">
+            <output id="ivalue">5</output>
+        </p>
+
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="iidade">A sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let ano = new Date().getFullYear()
+            iidade.innerHTML = Number(ano) - Number(iano.value)
+        }
+    </script>
 
 </body>
 </html>
