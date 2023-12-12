@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Outros elementos de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--
+            Checkbox: é usado para multipla seleção
+            Cheked: Vai trazer a opção selecionada, pode ser colocado em mais de uma opção
+
+            Radio: é usado para selecionar uma unica opção.
+                name tem que ser igual em todos as opções que fazem parte do mesmo grupo de opções
+                id tem que ser diferente para que a opções marque a caixa de seleção.
+            Cheked: Vai trazer a opção selecionada, SOMENTE pode ser colocado em UMA opção
+        -->
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="efutebol" id="ifutebol" checked><label for="ifutebol">Futebol</label><br>
+            <input type="checkbox" name="ebasteque" id="ibasquete"><label for="ibasquete">Basquete</label><br>
+            <input type="checkbox" name="evolei" id="ivolei"><label for="ivolei">Volei</label><br>
+            <input type="checkbox" name="enatacao" id="inatacao"><label for="inatacao">Natação</label>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o seu time</legend>
+            <input type="radio" name="time" id="palmeiras"><label for="palmeiras">Palmeiras</label><br>
+            <input type="radio" name="time" id="atleticomg"><label for="atleticomg">Atletico MG</label><br>
+            <input type="radio" name="time" id="cruzeiro"><label for="cruzeiro">Cruzeiro</label><br>
+            <input type="radio" name="time" id="flamengo"><label for="flamengo">Flamengo</label>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
