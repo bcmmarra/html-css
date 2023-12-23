@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <!--
+        Para Usar Icons do Site Google Icons
+        Escolher Icone > clicar sobre o icone escolhido. Na aba lateral clicar em Icon font Link Instructions (Entrar no Link Abaixo)
+        https://developers.google.com/fonts/docs/material_icons#icon_font_for_the_web
+
+        Encontrar a instrução de Método de configuração 1. Usar pelo Google Fonts
+        Para usar o icone direto do servidor do Google
+        Copiar o link informado
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        Descendo mais a tela até a seção de Como usar os ícones em HTML, copiar o codigo de inserção do icone no HTML.
+        <span class="material-icons">face</span>
+
+        Depois no local onde quer que o Icone apareça colar o código copiado e trocar o nome face para o nome do icone escolhido
+    -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="cliqMenu()">menu</span>
+        <nav id="menuItens">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat aut porro deleniti doloribus voluptatum sunt perferendis officia a molestiae iusto placeat earum, officiis, incidunt nemo beatae eum. Assumenda, error! Animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eveniet magnam enim, velit, incidunt in vitae perferendis aut eius deleniti ipsum expedita vel doloribus eligendi quae libero aperiam laudantium officiis.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque magni eligendi molestiae! Aperiam perspiciatis neque voluptatibus consequatur itaque commodi obcaecati pariatur officia distinctio voluptas corporis, illo aut illum ipsum nisi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate corrupti possimus vitae necessitatibus aut pariatur omnis obcaecati atque, sit distinctio fugiat hic magni, amet temporibus ipsam vero non. Dolore, aspernatur.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga rerum numquam at laboriosam sit maiores id magnam. Aliquid nesciunt vitae ipsum eaque repellendus illo itaque quo ducimus! Dolores, culpa maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aut totam accusantium reprehenderit accusamus laboriosam ipsum quia quae consectetur atque. Atque aut ab numquam corrupti possimus cupiditate magni odio incidunt.</p>
+        </section>
+    </main>
+    <!-- Criar Função para exibir e esconder o menu Hamburguer -->
+    <script> 
+        function cliqMenu(){
+            if (menuItens.style.display == 'block') {
+                menuItens.style.display = 'none'
+            } else {
+                menuItens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

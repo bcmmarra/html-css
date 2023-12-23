@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/*
+Typical Device Breakpoints
+
+Dispositivos Extra Pequenos (telas, 600px e inferiores)
+@media only screen and (max-width: 600px) {...}
+Abrange de 1px até 600px
+
+Dispositivos Pequenos (Tablets retrato e Smartphone Grandes, 600px e superiores)
+@media only screen and (min-width: 600px) {...}
+Abrange de 600px até o próximo tamanho definido (768px)
+
+Dispositivos Médios (Tablets paisagem, 768px e superiores)
+@media only screen and (min-width: 768px) {...}
+Abrange de 768px até o próximo tamanho definido (992px)
+
+Dispositivos Grandes (Notebook / Desktops, 992px e superiores)
+@media only screen and (min-width: 992px) {...}
+Abrange de 992px até o próximo tamanho definido (1200px)
+
+Dispositivos Extra Grandes (Notebook e Desktops grandes, 1200px e superiores)
+@media only screen and (min-width: 1200px) {...}
+Abrange de 1200px até o próximo tamanho definido.
+*/
+
+/*Importando os tamanhos da telas*/
+@media print { /*Versão de Impressão*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        border: 2px solid black;
+    }
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+    main::after {
+        content: "Versão de Impressão, feita para o exercício 026 de Media Query";
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+/*
+@media screen and (min-width: 600px) and (max-width: 768px) {...}
+Smartphone - esse podemos descartar, pois essas configurações estão no CSS Style (Mobile First)
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tablets*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Desktops*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /*Telas Grande*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
