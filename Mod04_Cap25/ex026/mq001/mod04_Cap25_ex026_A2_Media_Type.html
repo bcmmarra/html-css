@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Media Query é a mesma coisa que Media Type mais Media Features-->
+    
+    <!--
+        Media Type
+        
+        Adicionar os tipos de media (Media Type) que o CSS vai ser aplicado
+            media="all"
+                all para todos os tipos de mídia. Não precisa declarar, pois já é o padrão.
+            
+            media="screen"
+                screen para monitores ou outros dispositivos como computadores, tablets e smartphones com telas coloridas e com resolução adequada
+
+            media="print"
+                print para impressoras;
+
+            media="handheld"
+                handheld para dispositivos de mão;
+
+        Sintaxe de aplicação
+
+            <link rel="stylesheet" media="print" href="print.css">
+                Vai aplicar na impressão da tela.
+            
+            <link rel="stylesheet" media="screen" href="screen.css">
+                Vai aplicar na própria tela
+     -->
+    <link rel="stylesheet" href="../css/tela.css" media="screen">
+    <link rel="stylesheet" href="../css/impressora.css" media="print">
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Noticías</h1>
+        <menu>
+            <ul>
+                <li>Esporte</li>
+                <li>Política</li>
+                <li>Tecnologia</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Aprendendo Medias Queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, modi quasi totam animi illo aliquam quod veniam, quas maiores sed amet in voluptas odit nobis unde architecto rerum laborum eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorum vel laborum reprehenderit inventore aut cupiditate recusandae porro labore. Error, aliquid fuga ducimus soluta assumenda non et maiores vitae debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid accusamus voluptatem officiis quaerat nostrum molestias necessitatibus! Magni autem minima, harum, vero ipsum, vel excepturi modi provident tempora laudantium facilis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, accusantium! Ratione deserunt, excepturi officia fugit id molestias blanditiis accusamus dolore nemo eos, tenetur incidunt ducimus necessitatibus nisi at. Beatae, numquam.</p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo iure a fugiat itaque cupiditate animi eligendi ratione fugit earum quasi omnis reiciendis repellat, facere at, quo veritatis. Voluptatum, beatae?</span><span>Dolore provident pariatur perspiciatis quidem, suscipit animi enim dolores architecto deleniti assumenda sit doloremque! Temporibus sequi quas, nesciunt ad officiis tenetur. Voluptate blanditiis beatae voluptatum architecto explicabo quibusdam ea quisquam!</span><span>Iusto ullam ducimus architecto, ipsam dicta consequatur eum accusamus veniam facilis quasi autem impedit natus ea possimus dolorem dolor quo, pariatur cumque labore quaerat sed fugiat debitis. Assumenda, ex ad.</span><span>Cupiditate sunt impedit ipsum. Reprehenderit hic blanditiis, unde enim quos omnis ipsam soluta iure ut expedita debitis iste nesciunt, ratione libero? Fugiat voluptate placeat culpa architecto? Iusto totam reiciendis quaerat!</span><span>Ipsam voluptates eligendi rerum adipisci quia dolorum inventore vel alias enim, ex quam amet atque illo dignissimos ratione cum nesciunt. Rerum officia corporis neque minima quos. Facere laudantium laborum ea.</span></p>
+        </article>
+    </main>
+</body>
+</html>

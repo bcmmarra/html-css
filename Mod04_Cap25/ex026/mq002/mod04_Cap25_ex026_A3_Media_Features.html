@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Media Query é a mesma coisa que Media Type mais Media Features-->
+    
+    <!--
+        Media Type
+        
+        Adicionar os tipos de media (Media Type) que o CSS vai ser aplicado
+            media="all"
+                all para todos os tipos de mídia. Não precisa declarar, pois já é o padrão.
+            
+            media="screen"
+                screen para monitores ou outros dispositivos como computadores, tablets e smartphones com telas coloridas e com resolução adequada
+
+            media="print"
+                print para impressoras;
+
+            media="handheld"
+                handheld para dispositivos de mão;
+
+        Sintaxe de aplicação
+
+            <link rel="stylesheet" media="print" href="print.css">
+                Vai aplicar na impressão da tela.
+            
+            <link rel="stylesheet" media="screen" href="screen.css">
+                Vai aplicar na própria tela
+     -->
+    <link rel="stylesheet" href="css/style.css" media="all"> <!-- Media Type-->
+    <link rel="stylesheet" href="css/retrato.css" media="screen and (orientation: portrait)"> <!-- media="Media Type" e screen and (Media Features)-->
+    <link rel="stylesheet" href="css/paissagem.css" media="screen and (orientation: landscape)"> <!-- media="Media Type" e screen and (Media Features)-->
+    <title>Media Query</title>
+</head>
+<body>
+
+    <h1>Mude a orientação do seu dispositivo</h1>
+
+</body>
+</html>
