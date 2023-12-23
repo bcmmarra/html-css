@@ -21,8 +21,9 @@
     -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-querie-style.css">
 </head>
-<body>
+<body onresize="tamanhoTela()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-icons" onclick="cliqMenu()">menu</span>
@@ -45,7 +46,15 @@
         </section>
     </main>
     <!-- Criar Função para exibir e esconder o menu Hamburguer -->
-    <script> 
+    <script>
+        function tamanhoTela(){
+            if (window.innerWidth >= 768) {
+                menuItens.style.display = 'block'
+            } else {
+                menuItens.style.display = 'none'
+            }
+        }
+        
         function cliqMenu(){
             if (menuItens.style.display == 'block') {
                 menuItens.style.display = 'none'

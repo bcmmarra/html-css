@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+Typical Device Breakpoints
+
+Dispositivos Extra Pequenos (telas, 600px e inferiores)
+@media only screen and (max-width: 600px) {...}
+Abrange de 1px até 600px
+
+Dispositivos Pequenos (Tablets retrato e Smartphone Grandes, 600px e superiores)
+@media only screen and (min-width: 600px) {...}
+Abrange de 600px até o próximo tamanho definido (768px)
+
+Dispositivos Médios (Tablets paisagem, 768px e superiores)
+@media only screen and (min-width: 768px) {...}
+Abrange de 768px até o próximo tamanho definido (992px)
+
+Dispositivos Grandes (Notebook / Desktops, 992px e superiores)
+@media only screen and (min-width: 992px) {...}
+Abrange de 992px até o próximo tamanho definido (1200px)
+
+Dispositivos Extra Grandes (Notebook e Desktops grandes, 1200px e superiores)
+@media only screen and (min-width: 1200px) {...}
+Abrange de 1200px até o próximo tamanho definido.
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+    nav {
+        display: block;
+        text-align: center;
+    }
+    nav > ul > li {
+        display: inline-block;
+    }  
+    section {
+        width: 768px;
+    }  
+}
