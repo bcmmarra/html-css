@@ -53,4 +53,3 @@ section#telefone{
     border: 2px solid rgba(255, 255, 255, 0.623); /* Inclui uma bordar para dar destaque ao botão selecionado*/
     transform: translate(-3px, -3px); /* Aplica efeito de mover o botão ao passar o mouse sobre ele.*/
 }
-

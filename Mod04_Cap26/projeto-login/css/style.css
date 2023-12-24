@@ -145,6 +145,24 @@ form > a.botao:hover {
     color: white;
 
 }
+#redes-sociais{
+    position: relative;
+    text-align: center;
+}
+
+#redes-sociais img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    box-sizing: border-box; /*Colocar a borda do Hover dentro da imagem, sem movimentar as outras imagens.*/
+}
+#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.623); /* Inclui uma bordar para dar destaque ao botão selecionado*/
+    transform: translate(-3px, -3px); /* Aplica efeito de mover o botão ao passar o mouse sobre ele.*/
+}
+
 
 /*Importando landscape*/
 /*SMARTPHONE*/

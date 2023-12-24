@@ -7,7 +7,7 @@
     padding: 10px;
 }
 
-html{
+html, body, main{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
     line-height: 1em;
